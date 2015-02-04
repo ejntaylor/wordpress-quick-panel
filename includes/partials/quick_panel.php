@@ -26,7 +26,7 @@
 			    foreach($list as $link => $menu_item) { 
 			    ?>
 			    
-			      <option <?php echo 'class="'. (!$menu_item[parent] ? 'parent-item' : 'child-item'). '" '; ?> value="<?= $link ?>"><?= $menu_item[0] ?> <?php if ($menu_item[parent]) echo '<span class="parent-info">['.$menu_item[parent].']</span>'; ?></option>
+			      <option <?php echo 'class="'. (!$menu_item[parent] ? 'parent-item' : 'child-item'). '" '; ?> value="<?= $link ?>"><?= $menu_item[0] ?> <?php if ($menu_item[parent]) echo '['.$menu_item[parent].']'; ?></option>
 		  <?php
 			    } ?>
 			</select>  

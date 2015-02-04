@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Quick Panel
  * Plugin URI: http://raison.co/woocommerce-category-collapse/
- * Description: Easily goto backend pages via shortcut key
+ * Description: Easily goto admin pages via shortcut key
  * Version: 1.0.0
  * Author: Raison
  * Author URI: http://raison.co
