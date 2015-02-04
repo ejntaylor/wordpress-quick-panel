@@ -18,22 +18,15 @@
 			//print_r($list);
 			
 			?>
-
-
-			<select class="quick-panel-chosen-select" name="per1" id="per1" onChange="window.location.href=this.value">
+<select class="quick-panel-chosen-select" name="per1" id="per1">
 			  <option selected="selected">Choose one</option>
-			  <?php
-			    foreach($list as $link => $menu_item) { 
-			    ?>
-			    
-			      <option <?php echo 'class="'. (!$menu_item[parent] ? 'parent-item' : 'child-item'). '" '; ?> value="<?= $link ?>"><?= $menu_item[0] ?> <?php if ($menu_item[parent]) echo '['.$menu_item[parent].']'; ?></option>
-		  <?php
-			    } ?>
+			  	<?php foreach($list as $link => $menu_item) { ?>
+<option class="<?php echo (!$menu_item[parent] ? 'parent-item' : 'child-item'); ?>" value="<?php echo get_admin_url(); echo $menu_item[2]; ?>" >
+<?php echo $menu_item[0]; if ($menu_item[parent]) echo '['.$menu_item[parent].']'; ?></option>
+		 
+		 
+				 <?php } ?>
 			</select>  
 
         </div>
     </div>
-
-
-
-

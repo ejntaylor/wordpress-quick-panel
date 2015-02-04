@@ -33,5 +33,25 @@ var visible = false;
 
 
     });
+    
+
+          
 
 });
+
+jQuery(function($){
+
+    
+      $('.quick-panel-chosen-select').on('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              //window.location = url; // redirect
+              
+              document.location.href = url; //relative to domain
+
+          }
+          return false;
+      });
+});
+      
+      
